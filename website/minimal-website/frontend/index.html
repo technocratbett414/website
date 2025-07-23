@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFV - Online Form Viewer</title>
+    <button id="modeToggle">Switch to Dark Mode</button>
+    <script>
+const toggleBtn = document.getElementById('modeToggle');
+toggleBtn.onclick = function() {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = 
+        document.body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+};
+</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Mission</h1>
+    </header>
+
+    <="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing a platform for viewing and managing online forms.</p>
+            <p>email: info@ofwebsite.org</p>
+            <p>Phone: (0111487078)</p>
+            <p>Address: 20200,Kenya</p>
+            <form>
+                <input type="text" placeholder="Your name" required>
+                <input type="Emai" placeholder="Your email" required>
+                <textarea placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+        <section id="Donate">
+            <h2>Support us</h2>
+            <form>
+                <input type="number" placeholder="amount (Ksh)" required>
+                <button type="submitt">Donate</button>
+            </form>
+        </section>
+
+                </-- Volunteer signup--/>
+        <section id="Volunteer">
+            <h2>Volunteer signup</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="Email" placeholder="Email" required>
+                <button type="submit">Signup</button>
+            </form>
+        </section>
+
+        <section id="Events">
+            <h2>Upcoming events</h2>
+            <ul>
+                <li>Community Clean-Up - Aug 15, 2029</li>
+                <li>Charity Run - sep 10, 2029</li>
+            </ul>
+        </section>
+
+    </--Impart stories--/>
+
+        <section id="Section">
+            <h2>Impact Stories</h2>
+            <blockquote>
+                ""Volunteering here changed my life and helped so many people!" - Jane D."
+            </blockquote>
+        </section>
+
+    </--Social media links--/>
+
+        <section id="Social">
+            <h2>Follow Us</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>How can I volunteer?</summary>
+                <p>Fill out the volunteer signup form above.</p>
+            </details>
+            <details>
+                <summary>How are donations used?</summary>
+                <p>All donations go directly to supporting our programs and events.</p>
+            </details>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section id="newsletter">
+            <h2>Newsletter Signup</h2>
+            <form>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+         <section id="newsletter">
+            <h2>Newsletter Signup</h2>
+            <form>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Legal Info -->
+        <section id="legal">
+            <h2>Legal</h2>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </section>
+    </div>
+    <footer>
+         &copy; 2025 OFV Website. All rights reserved.
+    </footer>
+
+    <main>
+        <section class="form-section">
+            <h2>Form Details</h2>
+            <button id="fetchForm">Fetch Form Data</button>
+            <div id="formDisplay"></div>
+            <form id="ofvForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <button id="fetchForm">Fetch Form Data</button>
+    <div id="formDisplay"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

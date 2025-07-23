@@ -1,0 +1,14 @@
+{
+  "name": "minimal-website-backend",
+  "version": "1.0.0",
+  "description": "A minimal backend for a website using Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
